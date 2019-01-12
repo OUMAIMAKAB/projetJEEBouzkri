@@ -84,7 +84,17 @@
                                         <f:errors path="idModePaiement" style="color: red;"></f:errors>
                                     </div>	
                                 
-                               
+                                     <div class="form-group">
+                                        <label>dateEmission</label>
+                                        <f:input path="dateEmission" type="date" class="form-control" placeholder="dateEmission" />
+                                        <f:errors path="dateEmission" type="date" style="color: red;"></f:errors>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>dateDecaissement</label>
+                                        <f:input path="dateDecaissement" type="date" class="form-control" placeholder="dateDecaissement" />
+                                        <f:errors path="dateDecaissement" type="date" style="color: red;"></f:errors>
+                                    </div>
                               
                                
                                

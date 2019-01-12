@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class ModePaiement implements Serializable{
@@ -24,10 +25,10 @@ public class ModePaiement implements Serializable{
 	
 	private double montant;
 	
-	
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateEmission;
 	
-	
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateDecaissement;
 	
 	private Boolean isUsed=false;
